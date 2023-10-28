@@ -1,0 +1,319 @@
+/* card */
+.cards {
+    //  background-image: $bgCard;
+    //     background-size: cover;
+    //  background-position: center;
+    //     background-repeat: no-repeat;
+    background: #8A2387;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f27121a2, #e94057b7, #8a2387c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    display: flex;
+    border-radius: 10px;
+    width: 95%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    justify-content: center;
+    margin: 10px;
+
+    @include mobileFirst(mm) {
+        padding: 0;
+
+
+
+    }
+
+    @include mobileFirst(tablet) {
+        height: auto;
+        padding: 0;
+
+
+    }
+
+    @include mobileFirst(notebookS) {
+        width: 79%;
+        margin: 10px;
+
+
+    }
+
+    @include mobileFirst(notebook) {
+        width: 70%;
+        margin: 20px;
+
+
+    }
+
+    @include mobileFirst(notebookM) {
+        width: 51%;
+        margin: 20px;
+        justify-content: left;
+
+
+    }
+
+    @include mobileFirst(notebookL) {
+        width: 700px;
+        height: auto;
+        margin: 10px;
+    }
+
+
+
+    .card-content {
+        @include mobileFirst(tablet) {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+
+        .card-title {
+            font-family: $fontRobot;
+            color: $fontCardColor;
+            font-size: 1.5em;
+            padding: 10px;
+            margin: 10px;
+
+            @include mobileFirst(tablet) {
+                position: absolute;
+                margin: 0;
+
+            }
+
+            @include mobileFirst(notebookM) {
+                position: absolute;
+                margin: 0;
+                padding: 20px;
+
+            }
+
+            @include mobileFirst(notebookL) {
+                padding: 15px;
+            }
+        }
+
+        .card-text {
+            font-family: $fontRobot;
+            color: $fontCardColor;
+            background-color: black;
+            font-size: 0.9em;
+            margin: auto;
+            width: 94%;
+            border-radius: 10px;
+            padding: 20px;
+
+            @include mobileFirst(mm) {
+                width: 98%;
+                margin: 4px;
+
+            }
+
+
+
+            @include mobileFirst(tablet) {
+                margin-top: 50px;
+                width: 380px;
+                height: 400px;
+
+            }
+            @include mobileFirst(notebookM) {
+                margin-top: 60px;
+                width: 90%;
+            }
+
+            @include mobileFirst(notebookL) {
+                margin-top: 50px;
+                width: 90%;
+            }
+        }
+
+        .card-audio {
+            display: flex;
+            width: 310px;
+            height: 1px;
+            margin-left: 10px;
+
+            @include mobileFirst(tablet) {
+                height: 360px;
+                margin: auto;
+            }
+
+
+            border-radius: 0 0 10px 10px;
+            align-items: end;
+
+            .img-track {
+                display: none;
+
+                @include mobileFirst(tablet) {
+                    display: flex;
+                    position: relative;
+                    width: 300px;
+                    justify-content: start;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-right: 10px;
+
+
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.cards-discografia {
+    justify-content: start !important;
+    padding: 0 !important;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 20px;
+
+
+    @include mobileFirst(tablet) {
+        max-width: 700px !important;
+    }
+
+    @include mobileFirst(notebook) {
+        margin-left: 15%;
+    }
+    @include mobileFirst(notebookM) {
+        height: auto;
+        margin-left: 25% !important;
+        
+        
+    }
+
+    @include mobileFirst(notebookL) {
+        max-width: 690px !important;
+        margin: 0;
+        margin-left: 5%;
+        
+    }
+
+
+    @include mobileFirst(4k) {
+        max-width: 690px !important;
+        margin: 0;
+        margin-left: 5% !important;
+    }
+    .card-text-discografia {
+        margin: auto !important;
+        margin-bottom: 5px !important;
+        width: auto;
+        @include mobileFirst(tablet) {
+            margin-top: 10px !important;
+            width: 390px !important;
+            height: auto !important;
+        }
+
+        @include mobileFirst(notebookM) {
+            margin-top: 10px !important;
+            width: 370px !important;
+            height: auto !important;
+        }
+
+
+    }
+
+    .card-album-img {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+        
+        margin: 0;
+        margin-top: 10px;
+        @include mobileFirst(notebookM) {
+            margin: 5px;
+            
+        }
+
+        img {
+            width: 275x;
+            height: 275px;
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 10px;
+
+            @include mobileFirst(tablet) {
+                margin: 10px;
+            }
+            @include mobileFirst(notebookM) {
+                margin: 5px;
+                
+            }
+
+        }
+
+    }
+}
+
+.cards-bibliografia {
+    padding: 5px;
+    width: 90%;
+    margin-bottom: 200px;
+
+    @include mobileFirst(tablet) {
+        width: 95% !important;
+        margin-bottom: 50%;
+        max-width: 894.81px;
+        
+ 
+     }
+    
+
+
+    @include mobileFirst(notebook) {
+       margin-left: 10%;
+
+
+    }
+    @include mobileFirst(notebookL) {
+       width: 50%;
+       margin-left: 10%;
+       margin-top: 9%;
+
+    }
+
+    @include mobileFirst(4k) {
+       width: 35%;
+       margin-left: 10%;
+       margin-top: 10%;
+       margin-bottom: 8%;
+
+    }
+        .card-text-bibliografia {
+            margin: 0px !important;
+            width: 100% !important;
+
+            @include mobileFirst(tablet) {
+                height: 100% !important;
+                width: 100% !important;
+                margin: 0 !important;
+         
+             }
+            
+
+            @include mobileFirst(notebookL) {
+                height: 95% !important;
+                width: 100% !important;
+                margin: 10px !important;
+         
+             }
+
+            
+
+        }
+ }

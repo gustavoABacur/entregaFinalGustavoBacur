@@ -1,0 +1,28 @@
+//  HEADERS
+.header {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    width: $widthMax;
+    height: auto;
+    z-index: 1;
+
+    
+
+}
+
+
+/* header de seccion best OF*/
+
+.header-bestof {
+    @include mobileFirst(notebookL) {
+        grid-column: 1 / 11;
+        grid-row: 1 / 2;
+        height: 90px;
+
+    }
+    @include mobileFirst(4k) {
+        height: 150px;
+
+    }
+
+}

@@ -1,0 +1,292 @@
+.main {
+   background-image: $bgMobileIndex;
+   background-repeat: no-repeat;
+   background-size: 210%;
+   background-position: center;
+   grid-column: 1 / 5;
+   grid-row: 2 / 4;
+   background-color: $backgroundColorDefault;
+
+   @include mobileFirst(tablet) {
+      background-image: $bgIndex2;
+      background-size: 200%;
+   }
+
+   @include mobileFirst(notebook) {
+      background-size: 150%;
+
+   }
+
+   @include mobileFirst(notebookM) {
+      background-size: 100%;
+   }
+
+   @include mobileFirst(notebookL) {
+      background-size: 100%;
+   }
+
+   @include mobileFirst(4k) {
+      background-size: cover;
+   }
+
+}
+
+
+/* MAIN SECCION BEST OF*/
+
+.main-bestof {
+   grid-column: 1 / 5;
+   grid-row: 2 / 4;
+   background-image: $bgMobileBestOF;
+   background-repeat: no-repeat;
+   background-size: 160%;
+   background-position: center;
+   background-attachment: fixed;
+   height: auto;
+
+   @include mobileFirst(notebook) {
+      background-image: $bgBestOF;
+      grid-column: 1 / 11;
+      grid-row: 2 / 4;
+   }
+
+   .content-card-bestof {
+      margin-top: 200px;
+      margin-bottom: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include mobileFirst(notebookL) {
+         flex-direction: row;
+         width: 100vw;
+         flex-wrap: wrap;
+
+      }
+
+   }
+
+   .main-bestof--h1 {
+      margin-top: 35%;
+      margin-left: 5%;
+      font-family: $fontRock;
+      color: antiquewhite;
+
+      @include mobileFirst(notebookM) {
+         margin-top: 10%;
+      }
+
+      @include mobileFirst(notebookL) {
+         margin-top: 15%;
+      }
+   }
+
+
+
+}
+
+
+
+/*FIN DE SECCION MAIN BEST OF*/
+
+
+/*main seccion BIBLIOGRAFIA*/
+
+.main-bibliografia {
+   grid-column: 1 / 5;
+   grid-row: 2 / 4;
+   background-image: $bgMobileBibliografia;
+   background-attachment: fixed;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: 150%;
+
+   @include mobileFirst(tablet) {
+      background-image: $bgBibliografia;
+      background-position: center;
+      background-size: cover;
+   }
+
+   @include mobileFirst(notebookL) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+   }
+
+
+   .main-bibliografia--h1 {
+      font-family: $fontRobot;
+      color: rgb(255, 255, 255);
+      font-size: 2em;
+      font-weight: 600;
+      letter-spacing: 10px;
+      margin-top: 40%;
+      margin-bottom: 10%;
+      margin-left: 5%;
+
+      @include mobileFirst(notebook) {
+         margin-top: 10%;
+         margin-bottom: 10%;
+         margin-left: 5%;
+
+
+      }
+   }
+
+
+}
+
+/* FIN MAIN BIBLIOGRAFIA */
+
+/* MAIN DISCOGRAFIA */
+.main-discografia {
+   grid-column: 1 / 5;
+   grid-row: 2 / 4;
+   // background-image: $bgMobileDiscografia;
+   background-attachment: fixed;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-color: #855370;
+   background-image: linear-gradient(4deg, #855370 0%, #784BA0 21%, #070b0d 50%);
+
+
+
+
+   background-size: 100%;
+
+   @include mobileFirst(ml) {
+      background-size: cover;
+
+   }
+
+   @include mobileFirst(tablet) {
+      background-image: $bgDiscografia;
+      background-position: center;
+      background-size: 155%;
+   }
+
+   @include mobileFirst(notebookM) {
+      background-image: $bgDiscografia2;
+      background-size: cover;
+      background-position: center;
+   }
+
+   @include mobileFirst(notebookL) {
+      background-image: $bgDiscografia2;
+      background-size: cover;
+      background-position: center;
+   }
+
+   .main-discografia--h1 {
+      font-family: $fontRubik;
+      color: rgb(255, 255, 255);
+      font-size: 1.2em;
+      font-weight: 600;
+      letter-spacing: 10px;
+      margin-top: 40%;
+      margin-bottom: 10%;
+      margin-left: 5%;
+
+      @include mobileFirst(notebookM) {
+         margin-top: 10%;
+      }
+
+      @include mobileFirst(notebookL) {
+         margin-top: 20%;
+
+      }
+
+   }
+}
+
+.content-cards-discografia {
+   grid-column: 1 / 5;
+   grid-row: 2 / 3;
+   margin-top: 200px;
+   margin-bottom: 200px;
+
+   @include mobileFirst(notebookL) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+}
+
+/* MAIN CONTACT */
+.main-contact {
+   grid-column: 1 / 5;
+   grid-row: 2 / 4;
+   background-image: $bgMobileContact;
+   background-attachment: fixed;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: 110%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   padding: auto;
+
+   @include mobileFirst(tablet) {
+      background-image: $bgContact;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+   }
+
+   @include mobileFirst(notebook) {
+      background-color: black;
+      background-position: right;
+      background-size: contain;
+
+
+   }
+
+   @include mobileFirst(notebookM) {
+      background-color: black;
+      background-position: center;
+      background-size: 100%;
+   }
+
+   @include mobileFirst(notebookL) {
+      background-color: black;
+      background-position: center;
+      background-size: cover;
+
+
+   }
+
+   .contact-h3 {
+      font-family: $fontRubik;
+      color: rgb(255, 255, 255);
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-left: 0%;
+
+   }
+
+   .article-contact {
+      margin-bottom: 70%;
+
+      @include mobileFirst(tablet) {
+         margin-bottom: 30%;
+         margin-left: 50%;
+
+      }
+
+      @include mobileFirst(notebook) {
+         margin-bottom: 15%;
+         margin-left: 32%;
+
+      }
+
+      @include mobileFirst(notebookL) {
+         margin-bottom: 15%;
+         margin-left: 32%;
+
+      }
+
+   }
+}

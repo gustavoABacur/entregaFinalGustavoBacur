@@ -1,0 +1,901 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Rock+Salt&family=Ropa+Sans&family=Rubik&family=Saira:wght@200;400&display=swap");
+.header {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+/* header de seccion best OF*/
+@media screen and (min-width: 1440px) {
+  .header-bestof {
+    grid-column: 1/11;
+    grid-row: 1/2;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .header-bestof {
+    height: 150px;
+  }
+}
+
+.nav {
+  background-image: linear-gradient(177deg, rgb(20, 46, 83) 0%, rgb(6, 8, 7) 100%);
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .nav {
+    height: 100%;
+  }
+}
+.nav button {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .nav button {
+    display: none;
+  }
+}
+.nav img {
+  width: 300px;
+  padding: auto;
+}
+@media screen and (min-width: 768px) {
+  .nav img {
+    width: 200px;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .nav img {
+    margin-top: 20%;
+  }
+}
+.nav ul {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .nav ul {
+    padding: 20px;
+  }
+}
+.nav .nav-link-bestof {
+  font-family: "Rock Salt", cursive;
+  font-size: 1.3em;
+}
+@media screen and (min-width: 768px) {
+  .nav .nav-link-bestof {
+    font-size: 1.2em;
+    width: 150px;
+  }
+}
+.nav .nav-link-bibliografia {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 4px;
+}
+@media screen and (min-width: 768px) {
+  .nav .nav-link-bibliografia {
+    font-size: 1em;
+  }
+}
+.nav .nav-link-discografia {
+  font-family: "Rubik", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .nav .nav-link-discografia {
+    font-size: 1em;
+  }
+}
+.nav .nav-link-contact {
+  font-family: "Roboto Condensed", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .nav .nav-link-contact {
+    font-size: 1em;
+  }
+}
+
+.main {
+  background-image: url("../assets/img/mobile-background-main.jpg");
+  background-repeat: no-repeat;
+  background-size: 210%;
+  background-position: center;
+  grid-column: 1/5;
+  grid-row: 2/4;
+  background-color: black;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    background-image: url("../assets/img/daft-punk-background-discografia.jpg");
+    background-size: 200%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    background-size: 150%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .main {
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .main {
+    background-size: cover;
+  }
+}
+
+/* MAIN SECCION BEST OF*/
+.main-bestof {
+  grid-column: 1/5;
+  grid-row: 2/4;
+  background-image: url("../assets/img/mobile-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  .main-bestof {
+    background-image: url("../assets/img/daft-punk-background-bestof.jpg");
+    grid-column: 1/11;
+    grid-row: 2/4;
+  }
+}
+.main-bestof .content-card-bestof {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1440px) {
+  .main-bestof .content-card-bestof {
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+}
+.main-bestof .main-bestof--h1 {
+  margin-top: 35%;
+  margin-left: 5%;
+  font-family: "Rock Salt", cursive;
+  color: antiquewhite;
+}
+@media screen and (min-width: 1366px) {
+  .main-bestof .main-bestof--h1 {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-bestof .main-bestof--h1 {
+    margin-top: 15%;
+  }
+}
+
+/*FIN DE SECCION MAIN BEST OF*/
+/*main seccion BIBLIOGRAFIA*/
+.main-bibliografia {
+  grid-column: 1/5;
+  grid-row: 2/4;
+  background-image: url("../assets/img/mobile-background-bibliografia.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+@media screen and (min-width: 768px) {
+  .main-bibliografia {
+    background-image: url("../assets/img/daft-punk-background-bibliografia.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-bibliografia {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.main-bibliografia .main-bibliografia--h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-top: 40%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .main-bibliografia .main-bibliografia--h1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+  }
+}
+
+/* FIN MAIN BIBLIOGRAFIA */
+/* MAIN DISCOGRAFIA */
+.main-discografia {
+  grid-column: 1/5;
+  grid-row: 2/4;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #855370;
+  background-image: linear-gradient(4deg, #855370 0%, #784BA0 21%, #070b0d 50%);
+  background-size: 100%;
+}
+@media screen and (min-width: 425px) {
+  .main-discografia {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-discografia {
+    background-image: url("../assets/img/background-discografia.jpg");
+    background-position: center;
+    background-size: 155%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .main-discografia {
+    background-image: url("../assets/img/background-discografia2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-discografia {
+    background-image: url("../assets/img/background-discografia2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+.main-discografia .main-discografia--h1 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-top: 40%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+@media screen and (min-width: 1366px) {
+  .main-discografia .main-discografia--h1 {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-discografia .main-discografia--h1 {
+    margin-top: 20%;
+  }
+}
+
+.content-cards-discografia {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+@media screen and (min-width: 1440px) {
+  .content-cards-discografia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+/* MAIN CONTACT */
+.main-contact {
+  grid-column: 1/5;
+  grid-row: 2/4;
+  background-image: url("../assets/img/daft-punk-mobile-contact.png");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: auto;
+}
+@media screen and (min-width: 768px) {
+  .main-contact {
+    background-image: url("../assets/img/daft-punk-contact.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-contact {
+    background-color: black;
+    background-position: right;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .main-contact {
+    background-color: black;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-contact {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.main-contact .contact-h3 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 0%;
+}
+.main-contact .article-contact {
+  margin-bottom: 70%;
+}
+@media screen and (min-width: 768px) {
+  .main-contact .article-contact {
+    margin-bottom: 30%;
+    margin-left: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-contact .article-contact {
+    margin-bottom: 15%;
+    margin-left: 32%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-contact .article-contact {
+    margin-bottom: 15%;
+    margin-left: 32%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 17% 68% auto;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  .contenedor__grid {
+    grid-template-rows: 4% auto 15%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .contenedor__grid {
+    grid-template-rows: 15% auto 20%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contenedor__grid {
+    grid-template-rows: 13% auto 15%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .contenedor__grid {
+    grid-template-rows: 10% auto 14%;
+  }
+}
+
+/* GRID BEST OF SECCION*/
+.contenedor__grid-bestof {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 22% auto 14%;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  .contenedor__grid-bestof {
+    grid-template-rows: 10% auto 18%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contenedor__grid-bestof {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10% auto 15%;
+    width: auto;
+    place-items: center;
+  }
+}
+
+/* GRID BIBLIOGRAFIA SECCION*/
+.contenedor__grid-bibliografia {
+  grid-template-rows: 11% auto 6%;
+  height: 100%;
+}
+@media screen and (min-width: 375px) {
+  .contenedor__grid-bibliografia {
+    grid-template-rows: 13% auto 7%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contenedor__grid-bibliografia {
+    grid-template-rows: 5% auto 9%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor__grid-bibliografia {
+    grid-template-rows: 5% auto 9%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .contenedor__grid-bibliografia {
+    grid-template-rows: 7% auto 7%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contenedor__grid-bibliografia {
+    grid-template-rows: 5% auto 8%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .contenedor__grid-bibliografia {
+    grid-template-rows: 7% auto 13%;
+  }
+}
+
+/*GRID DISCOGRAGIA */
+.contenedor__grid-discografia {
+  grid-template-rows: 60px auto 120px;
+  height: auto;
+}
+@media screen and (min-width: 1440px) {
+  .contenedor__grid-discografia {
+    grid-template-rows: 2% auto 4%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .contenedor__grid-discografia {
+    grid-template-rows: 5% auto 8%;
+  }
+}
+
+/*GRID CONTACT */
+@media screen and (min-width: 768px) {
+  .contenedor__grid-contact {
+    grid-template-rows: 17% auto 15%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .contenedor__grid-contact {
+    grid-template-rows: 17% auto 19%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .contenedor__grid-contact {
+    grid-template-rows: 14% auto 15%;
+  }
+}
+
+/* card */
+.cards {
+  background: #8A2387;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(242, 113, 33, 0.6352941176), rgba(233, 64, 87, 0.7176470588), rgba(138, 35, 135, 0.7803921569));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  border-radius: 10px;
+  width: 95%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  justify-content: center;
+  margin: 10px;
+}
+@media screen and (min-width: 375px) {
+  .cards {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    height: auto;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .cards {
+    width: 79%;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    width: 70%;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .cards {
+    width: 51%;
+    margin: 20px;
+    justify-content: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards {
+    width: 700px;
+    height: auto;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards .card-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.cards .card-content .card-title {
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(243, 231, 196);
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 10px;
+}
+@media screen and (min-width: 768px) {
+  .cards .card-content .card-title {
+    position: absolute;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .cards .card-content .card-title {
+    position: absolute;
+    margin: 0;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards .card-content .card-title {
+    padding: 15px;
+  }
+}
+.cards .card-content .card-text {
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(243, 231, 196);
+  background-color: black;
+  font-size: 0.9em;
+  margin: auto;
+  width: 94%;
+  border-radius: 10px;
+  padding: 20px;
+}
+@media screen and (min-width: 375px) {
+  .cards .card-content .card-text {
+    width: 98%;
+    margin: 4px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards .card-content .card-text {
+    margin-top: 50px;
+    width: 380px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .cards .card-content .card-text {
+    margin-top: 60px;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards .card-content .card-text {
+    margin-top: 50px;
+    width: 90%;
+  }
+}
+.cards .card-content .card-audio {
+  display: flex;
+  width: 310px;
+  height: 1px;
+  margin-left: 10px;
+  border-radius: 0 0 10px 10px;
+  align-items: end;
+}
+@media screen and (min-width: 768px) {
+  .cards .card-content .card-audio {
+    height: 360px;
+    margin: auto;
+  }
+}
+.cards .card-content .card-audio .img-track {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .cards .card-content .card-audio .img-track {
+    display: flex;
+    position: relative;
+    width: 300px;
+    justify-content: start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+  }
+}
+
+.cards-discografia {
+  justify-content: start !important;
+  padding: 0 !important;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .cards-discografia {
+    max-width: 700px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards-discografia {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .cards-discografia {
+    height: auto;
+    margin-left: 25% !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards-discografia {
+    max-width: 690px !important;
+    margin: 0;
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .cards-discografia {
+    max-width: 690px !important;
+    margin: 0;
+    margin-left: 5% !important;
+  }
+}
+.cards-discografia .card-text-discografia {
+  margin: auto !important;
+  margin-bottom: 5px !important;
+  width: auto;
+}
+@media screen and (min-width: 768px) {
+  .cards-discografia .card-text-discografia {
+    margin-top: 10px !important;
+    width: 390px !important;
+    height: auto !important;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .cards-discografia .card-text-discografia {
+    margin-top: 10px !important;
+    width: 370px !important;
+    height: auto !important;
+  }
+}
+.cards-discografia .card-album-img {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  margin: 0;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1366px) {
+  .cards-discografia .card-album-img {
+    margin: 5px;
+  }
+}
+.cards-discografia .card-album-img img {
+  width: 275x;
+  height: 275px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .cards-discografia .card-album-img img {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .cards-discografia .card-album-img img {
+    margin: 5px;
+  }
+}
+
+.cards-bibliografia {
+  padding: 5px;
+  width: 90%;
+  margin-bottom: 200px;
+}
+@media screen and (min-width: 768px) {
+  .cards-bibliografia {
+    width: 95% !important;
+    margin-bottom: 50%;
+    max-width: 894.81px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards-bibliografia {
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards-bibliografia {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 9%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .cards-bibliografia {
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 8%;
+  }
+}
+.cards-bibliografia .card-text-bibliografia {
+  margin: 0px !important;
+  width: 100% !important;
+}
+@media screen and (min-width: 768px) {
+  .cards-bibliografia .card-text-bibliografia {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards-bibliografia .card-text-bibliografia {
+    height: 95% !important;
+    width: 100% !important;
+    margin: 10px !important;
+  }
+}
+
+/* MP3 PLAYER */
+.icon-mp3 {
+  width: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.footer-contact {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgba(177, 12, 228, 0.616);
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .footer-contact {
+    background-image: url("../assets/img/footer-gradient.png");
+    background-color: rgba(0, 0, 0, 0.438);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 130%;
+    margin: 0;
+    margin-left: auto;
+    width: 97%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-contact {
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer-contact {
+    background-size: 80%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .footer-contact {
+    background-size: 70%;
+  }
+}
+.footer-contact .social-media-p {
+  margin: auto;
+  grid-column: 1/5;
+  grid-row: 1/2;
+  color: black;
+  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .footer-contact .social-media-p {
+    margin: 0;
+    text-align: right;
+    margin-right: 30%;
+  }
+}
+.footer-contact .social-media-ico {
+  margin: auto;
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+@media screen and (min-width: 768px) {
+  .footer-contact .social-media-ico {
+    margin: 0;
+    text-align: end;
+    margin-right: 25%;
+  }
+}
+.footer-contact .social-media-ico img {
+  margin: 5px;
+  width: 25px;
+}
+.footer-contact .footer-reserved-right {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  margin-top: 10px;
+  color: black;
+  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .footer-contact .footer-reserved-right {
+    margin-left: 3%;
+    text-align: start;
+    color: beige;
+    font-size: 0.8em;
+  }
+}
+
+/* footer en seccion best OF */
+@media screen and (min-width: 1440px) {
+  .footer-bestof {
+    grid-column: 5/11;
+    grid-row: 3/4;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

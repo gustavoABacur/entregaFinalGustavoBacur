@@ -1,0 +1,39 @@
+$fontRobot: 'Roboto Condensed', sans-serif;
+$fontRock: 'Rock Salt', cursive;
+$fontRubik: 'Rubik', sans-serif;
+$fontFootColor: black;
+$fontCardColor: rgb(243, 231, 196);
+$fontFootBold: 600;
+$widthMax: 100%;
+$heightMax: 100vh;
+$backgroundColorDefault: black;
+$bgColorFooter: rgba(0, 0, 0, 0.37);
+$navGradient: linear-gradient(177deg, rgba(20, 46, 83, 1) 0%, rgba(6, 8, 7, 1) 100%);
+$generalGradient: url("../assets/img/background-gradient.png");
+$bgMobileIndex: url("../assets/img/mobile-background-main.jpg");
+$bgMobileBibliografia: url("../assets/img/mobile-background-bibliografia.jpg");
+$bgBibliografia: url("../assets/img/daft-punk-background-bibliografia.jpeg");
+$bgMobileBestOF: url("../assets/img/mobile-background.jpg");
+$bgBibliografia4k: url("../assets/img/daft-punk-background-bibliografia-4k.jpg");
+$bgBestOF: url("../assets/img/daft-punk-background-bestof.jpg");
+$bgIndex2: url("../assets/img/daft-punk-background-discografia.jpg");
+$bgFooter: url("../assets/img/footer-gradient.png");
+$bgMobileDiscografia: url("../assets/img/mobile-background-discografia.jpg");
+$bgDiscografia: url("../assets/img/background-discografia.jpg");
+$bgDiscografia2: url("../assets/img/background-discografia2.jpg");
+$bgMobileContact: url("../assets/img/daft-punk-mobile-contact.png");
+$bgContact: url("../assets/img/daft-punk-contact.jpg");
+
+$tiktokIco: url("../assets/img/tiktok.svg");
+$facebookIco: url("../assets/img/facebook.svg");
+$youtubeIco: url("../assets/img/youtube.svg");
+$spotifyIco: url("../assets/img/spotify.svg");
+$bgCard: url("../assets/img/background-gradient.png");
+
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}

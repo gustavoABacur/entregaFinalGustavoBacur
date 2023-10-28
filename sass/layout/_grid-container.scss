@@ -1,0 +1,131 @@
+//  GRID CONTAINER
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 17% 68% auto;
+    width: $widthMax;
+    height: $heightMax;
+    @include mobileFirst(tablet) {
+        grid-template-rows: 4% auto 15%;
+
+    }
+
+    @include mobileFirst(notebookM) {
+        grid-template-rows: 15% auto 20%;
+
+    }
+    @include mobileFirst(notebookL) {
+        grid-template-rows: 13% auto 15%;
+
+    }
+
+    @include mobileFirst(4k) {
+        grid-template-rows: 10% auto 14%;
+
+
+    }
+
+}
+
+
+
+
+/* GRID BEST OF SECCION*/
+
+.contenedor__grid-bestof {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 22% auto 14%;
+    width: $widthMax;
+    height: 100vh;
+
+    @include mobileFirst(tablet) {
+        grid-template-rows: 10% auto 18%;
+
+
+    }
+
+
+    @include mobileFirst(notebookL) {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 10% auto 15%;
+        width: auto;
+        place-items: center;
+
+
+    }
+
+}
+
+/* GRID BIBLIOGRAFIA SECCION*/
+.contenedor__grid-bibliografia {
+    grid-template-rows: 11% auto 6%;
+    height: 100%;
+
+    @include mobileFirst(mm) {
+        grid-template-rows: 13% auto 7%;
+
+
+    }
+    
+
+    @include mobileFirst(tablet) {
+        grid-template-rows: 5% auto 9%;
+
+
+    }
+
+    @include mobileFirst(notebook) {
+        grid-template-rows: 5% auto 9%;
+    }
+
+    @include mobileFirst(notebookM) {
+        grid-template-rows: 7% auto 7%;
+
+    }
+
+    @include mobileFirst(notebookL) {
+        grid-template-rows: 5% auto 8%;
+
+    }
+
+    @include mobileFirst(4k) {
+        grid-template-rows: 7% auto 13%;
+
+    }
+}
+
+/*GRID DISCOGRAGIA */
+.contenedor__grid-discografia {
+    grid-template-rows: 60px auto 120px;
+    height: auto;
+
+    @include mobileFirst(notebookL) {
+        grid-template-rows: 2% auto 4%;
+    }
+    @include mobileFirst(4k) {
+        grid-template-rows: 5% auto 8%;
+    }
+
+}
+
+/*GRID CONTACT */
+.contenedor__grid-contact {
+    @include mobileFirst(tablet) {
+        grid-template-rows: 17% auto 15%;
+    }
+
+    @include mobileFirst(notebookM) {
+        grid-template-rows: 17% auto 19%;
+    }
+
+    @include mobileFirst(4k) {
+        grid-template-rows: 14% auto 15%;
+    }
+}

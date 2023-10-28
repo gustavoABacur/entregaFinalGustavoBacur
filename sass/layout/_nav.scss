@@ -1,0 +1,88 @@
+.nav {
+    background-image: $navGradient;
+
+    @include mobileFirst(tablet) {
+        height: 80px;
+    }
+
+    @include mobileFirst(notebookM) {
+        height: 100%;
+
+    }
+
+
+    button {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include mobileFirst (tablet) {
+            display: none;
+        }
+    }
+
+    img {
+        width: 300px;
+        padding: auto;
+
+        @include mobileFirst (tablet) {
+            width: 200px;
+            margin-top: 40px;
+        }
+
+        @include mobileFirst(notebookM) {
+            margin-top: 20%;
+
+        }
+    }
+
+    ul {
+        text-align: center;
+
+        @include mobileFirst (tablet) {
+            padding: 20px;
+        }
+
+    }
+
+    .nav-link-bestof {
+        font-family: $fontRock;
+        font-size: 1.3em;
+
+        @include mobileFirst (tablet) {
+            font-size: 1.2em;
+            width: 150px;
+
+        }
+    }
+
+    .nav-link-bibliografia {
+        font-family: $fontRobot;
+        font-size: 1.4em;
+        letter-spacing: 4px;
+
+        @include mobileFirst (tablet) {
+            font-size: 1em;
+        }
+    }
+
+    .nav-link-discografia {
+        font-family: $fontRubik;
+
+        @include mobileFirst (tablet) {
+            font-size: 1em;
+        }
+
+    }
+
+    .nav-link-contact {
+        font-family: $fontRobot;
+
+        @include mobileFirst (tablet) {
+            font-size: 1em;
+
+        }
+
+    }
+}

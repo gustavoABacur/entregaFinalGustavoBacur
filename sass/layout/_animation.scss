@@ -1,0 +1,62 @@
+    // ANINACIONES
+    .main-animation-mobile-content {
+        display: grid;
+        place-items: center;
+
+        @include mobileFirst(tablet) {
+            display: none;
+            animation: none;
+
+        }
+
+
+
+        .main-animation-mobile {
+            bottom: auto;
+            top: 59%;
+            position: absolute;
+            background-image: radial-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 0) 50%);
+            height: 70px;
+            width: 175px;
+            border-radius: 50px;
+            clip-path: polygon(46% 35%, 75% 30%, 100% 14%, 93% 74%, 81% 92%, 49% 100%, 15% 92%, 5% 72%, 0 15%, 19% 28%);
+            animation: mobileIndexAnimation 5s ease-in-out infinite;
+
+            @include mobileFirst(mm) {
+                top: 60%;
+                width: 180px;
+
+            }
+
+            @include mobileFirst(mm) {
+                top: 60%;
+                height: 80px;
+                width: 220px;
+            }
+
+        }
+
+
+    }
+
+    @keyframes mobileIndexAnimation {
+        0% {
+            background-image: radial-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.5) 0%);
+        }
+
+        25% {
+            background-image: radial-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0) 50%);
+        }
+
+        50% {
+            background-image: radial-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 0) 0%);
+        }
+
+        75% {
+            background-image: radial-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0) 50%);
+        }
+
+        100% {
+            background-image: radial-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0) 0%);
+        }
+    }
